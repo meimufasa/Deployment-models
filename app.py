@@ -77,7 +77,7 @@ for idx, row in sample_cars.iterrows():
     with cols[idx % 3]:
         st.markdown(f"""
             <div class='custom-card'>
-                <div class='car-header'>{row['brand']} {row['model']}</div>
+                <div class='car-header'>{row['model']}</div>
                 <div class='car-spec'>Body: {row['car_body_type']} | {row['segment']}</div>
                 <div class='car-spec'>Battery: {row['battery_capacity_kWh']} kWh | Efficiency: {row['efficiency_wh_per_km']} Wh/km</div>
                 <div class='car-spec'>0–100 km/h: {row['acceleration_0_100_s']}s | Seats: {row['seats']}</div>
