@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-with open('model.pkl', 'rb') as f:
+with open('pipe.pkl', 'rb') as f:
     pipe = pickle.load(f)
 
 st.set_page_config(page_title="EV Range Estimator", layout="wide")
